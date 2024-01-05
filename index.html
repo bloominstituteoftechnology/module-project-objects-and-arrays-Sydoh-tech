@@ -133,9 +133,9 @@ buildPeter("John", "Smith", 30)
     // 🧠 If you need to look, do not copy & paste code. Take a peek and then work from memory!
     function stripChar(row, are) {
       let outCome = [];
-      let bRow = row.split('')
-      for (let nail in bRow) {
-        let hare = bRow[nail]
+      let splitRow = row.split('')
+      for (let nail in splitRow) {
+        let hare = splitRow[nail]
         if (hare !== are){
           outCome[outCome.length] = hare
         }
@@ -153,8 +153,14 @@ buildPeter("John", "Smith", 30)
     // getProps({ lastName: "Smith", age: 35 }) // should return ["lastName"]
     // getProps({ firstName: "Jane", married: false }) // should return ["firstName"]
     // getProps({ name: "Bamby", favFood: "flowers" }) // should return ["name", "favFood"]
-    function getProps() {
-
+    function getProps(house) {
+      let result = [];
+      for (let old in house){
+        if(old !=="age" && old !=="married"){
+          result[result.length] = old;
+        }
+      }
+      return result;
     }
 
     // 🧪 TESTS, do not work below this line
