@@ -109,13 +109,13 @@ buildPeter("John", "Smith", 30)
     // 🧠 At each iteration of the loop, if the current character is not "x", then add it to the end of the result array.
     // 🧠 You can merge the result array back into a string by using join. Example: ["f", "o", "o"].join("") yields "foo"
     // 🧠 Do not forget to return your rejoined string!
-    function stripX(xray) {
+    function stripX(ray) {
       let result = [];
-      let splitXray = xray.split('')
+      let splitXray = ray.split('')
       for (let i in splitXray) {
-        let char = splitXray[i]
-        if (char !=='x') {
-          result[result.length] = char
+        let jah = splitXray[i]
+        if (jah !=='x') {
+          result[result.length] = jah
       }
     }
       let joined = result.join('')
@@ -131,8 +131,17 @@ buildPeter("John", "Smith", 30)
     // ❗ Important Notes:
     // 🧠 Try to solve this problem without looking at how you solved the previous one.
     // 🧠 If you need to look, do not copy & paste code. Take a peek and then work from memory!
-    function stripChar() {
-
+    function stripChar(row, are) {
+      let outCome = [];
+      let bRow = row.split('')
+      for (let nail in bRow) {
+        let hare = bRow[nail]
+        if (hare !== are){
+          outCome[outCome.length] = hare
+        }
+        } 
+        
+        return outCome.join('')
     }
 
     // 👉 CHALLENGE 9
