@@ -82,7 +82,7 @@ buildPeter("John", "Smith", 30)
           return array1[0]
         }
         else{
-        return array1[array1.length - 1]
+        return array1.at(-1)
         }
     }
 
@@ -92,8 +92,9 @@ buildPeter("John", "Smith", 30)
     // 🧠 Examples of usage:
     // pushElement([], 1) // should return [1]
     // pushElement(['a', 'b'], 'c') // should return ['a', 'b', 'c']
-    function pushElement() {
-
+    function pushElement(arr, sleep) {
+          arr[arr.length] = sleep
+          return arr
     }
 
     // 👉 CHALLENGE 7
@@ -108,8 +109,17 @@ buildPeter("John", "Smith", 30)
     // 🧠 At each iteration of the loop, if the current character is not "x", then add it to the end of the result array.
     // 🧠 You can merge the result array back into a string by using join. Example: ["f", "o", "o"].join("") yields "foo"
     // 🧠 Do not forget to return your rejoined string!
-    function stripX() {
-
+    function stripX(xray) {
+      let result = [];
+      let splitXray = xray.split('')
+      for (let i in splitXray) {
+        let char = splitXray[i]
+        if (char !=='x') {
+          result[result.length] = char
+      }
+    }
+      let joined = result.join('')
+      return joined
     }
 
     // 👉 CHALLENGE 8
