@@ -77,8 +77,13 @@ buildPeter("John", "Smith", 30)
     // 🧠 Examples of usage:
     // firstOrLast(['a', 'b'], true) // should return 'a'
     // firstOrLast(['a', 'b'], false) // should return 'b'
-    function firstOrLast() {
-
+    function firstOrLast(array1, pool) {
+         if (pool){
+          return array1[0]
+        }
+        else{
+        return array1[array1.length - 1]
+        }
     }
 
     // 👉 CHALLENGE 6
