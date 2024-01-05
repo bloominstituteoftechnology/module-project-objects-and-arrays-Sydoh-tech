@@ -22,17 +22,24 @@
     // 🧠 The function buildPeter builds an object of a certain shape and returns it.
     // 🧠 Example of usage:
     // buildPeter() // should return { firstName: "Peter", lastName: "Pan", age: 12 }
-    function buildPeter() {
-
+    function buildPeter(firstName, lastName, age) {
+      return { firstName: "Peter", lastName: "Pan", age: 12 }
     }
+    buildPeter()
 
     // 👉 CHALLENGE 2
     // 🧠 The function buildUser takes three arguments and uses them to build an object and return it.
     // 🧠 Example of usage:
     // buildUser("John", "Smith", 30) // should return { firstName: "John", lastName: "Smith", age: 30 }
     function buildUser(firstName, lastName, age) {
-
-    }
+  let user = {}
+  user.firstName = firstName
+  user.lastName = lastName
+  user.age = age
+  return user
+}
+buildPeter("John", "Smith", 30)
+   
 
     // 👉 CHALLENGE 3
     // 🧠 The function deletePrice takes an object as its argument and deletes its "price" property if it exists.
